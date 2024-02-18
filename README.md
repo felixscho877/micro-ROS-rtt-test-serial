@@ -4,7 +4,7 @@ This is an adaption of the ping-pong_client with the QoS set to best-effort and 
 
 micro-ROS-rtt repo for the ping_pong_client: https://github.com/micro-ROS/micro-ROS-rtt
 
-For testing: 
+## For testing: 
 
 ESP32 Side:
 1. build the micro-ROS-rtt on a ROS2-System
@@ -15,6 +15,6 @@ ESP32 Side:
 
 ROS2 Device:
 
-Build and source "micro-ROS-rtt"-folder
-Start the pingpong_client with: 
+1. Build and source the "micro-ROS-rtt"-folder. 
+2. Start the pingpong_client with: 
 `ros2 run micro_ros_rtt pingpong_client --ros-args -p max_messages:=<n msgs> > <path_to_data_file> `
