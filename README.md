@@ -7,10 +7,9 @@ micro-ROS-rtt repo for the ping_pong_client: https://github.com/micro-ROS/micro-
 ## For testing: 
 
 ESP32 Side:
-1. build the micro-ROS-rtt on a ROS2-System
-2. configure UART Pins in the menuconfig (normally TX:1, RX:3) and set the transport to serial (also in colcon.meta)
-3. build and flash "ping_pong_custom_transport" on an esp32
-4. Start the micro-ROS-agent for serial with: 
+1. configure UART Pins in the menuconfig (normally TX:1, RX:3) and set the transport to serial (also in colcon.meta)
+2. build and flash "ping_pong_custom_transport" on an esp32
+3. Start the micro-ROS-agent for serial with: 
 `` ros2 run microros-agent serial --dev /dev/<USB-Port> -v6 ``
 
 ROS2 Device:
